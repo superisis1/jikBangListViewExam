@@ -39,11 +39,11 @@ public class RoomAdapter extends ArrayAdapter<Room> {
 //        그냥 findViewById 가 아니고, row.findViewById 인 것이 매우 중요!!!
         TextView paymentTxt = row.findViewById(R.id.paymentTxt);
         TextView locationAndFloorTxt = row.findViewById(R.id.locationAndFloorTxt);
-        TextView desriptionTxt = row.findViewById(R.id.descriptionTxt);
+        TextView descriptionTxt = row.findViewById(R.id.descriptionTxt);
 
         paymentTxt.setText(String.format("%d/%d", roomData.deposit, roomData.month_pay));
         locationAndFloorTxt.setText(String.format("%s, %d층", roomData.location, roomData.floor));
-        desriptionTxt.setText(roomData.description);
+        descriptionTxt.setText(roomData.description);
 
         return row;
     }
