@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
     List<Room> roomList = new ArrayList<>(); // 리스트를 멤버변수로 생성
 
-   ActivityMainBinding act;
+    ActivityMainBinding act;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
