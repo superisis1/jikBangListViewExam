@@ -7,10 +7,13 @@ import android.os.Bundle;
 import java.util.ArrayList;
 import java.util.List;
 
+import kr.insungjung.jikbanglistviewexam.adapters.RoomAdapter;
 import kr.insungjung.jikbanglistviewexam.databinding.ActivityMainBinding;
 import kr.insungjung.jikbanglistviewexam.datas.Room;
 
 public class MainActivity extends AppCompatActivity {
+
+    RoomAdapter mRoomAdapter;
 
     List<Room> roomList = new ArrayList<>(); // 리스트를 멤버변수로 생성
 
@@ -24,6 +27,9 @@ public class MainActivity extends AppCompatActivity {
         act.cleanRoomCountTxt.setText("32개");
 
         fillRooms();
+
+        mRoomAdapter = new RoomAdapter(MainActivity.this, roomList);
+        act.roomListView.setAdapter(mRoomAdapter);
 
     }
 
