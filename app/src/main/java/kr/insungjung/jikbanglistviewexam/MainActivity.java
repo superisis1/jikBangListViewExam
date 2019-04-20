@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         act = DataBindingUtil.setContentView(this, R.layout.activity_main);
 
-        act.cleanRoomCountTxt.setText("32개");
+//        act.cleanRoomCountTxt.setText("32개");
 
         fillRooms();
 
